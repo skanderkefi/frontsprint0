@@ -1,0 +1,19 @@
+<br><br>
+<form #f="ngForm" (submit)="loginF()">
+   
+  
+    <div class="container">
+      <label for="mailadress"><b>Mail Address </b></label>
+      <input type="text" [(ngModel)]='login.mailAddress' id="madress" placeholder="Enter Username" name="mailadress" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" [(ngModel)]='login.mdp' id="pwd" placeholder="Enter Password" name="psw" required>
+          
+      <button type="submit">Login</button>
+    
+      <h4 style="color:red" *ngIf="isntconnected">You don't exist !</h4> 
+
+    </div>
+  
+  </form>
+  
